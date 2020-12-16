@@ -178,7 +178,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-.section-title {
+.section__title {
   margin-bottom: 4rem;
   text-align: center;
 }
@@ -495,7 +495,7 @@ Services
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
-.service-icon {
+.service__icon {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -520,7 +520,7 @@ Services
   background: var(--clr-primary-9);
 }
 @media screen and (min-width: 676px) {
-  .services-center {
+  .services--center {
     display: grid;
     grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 2rem;
@@ -529,7 +529,7 @@ Services
   }
 }
 @media screen and (min-width: 992px) {
-  .services-center {
+  .services--center {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -896,7 +896,7 @@ About Page
   margin-bottom: 2rem;
   height: 25rem;
 }
-.about-text .section-title {
+.about-text .section__title {
   margin-bottom: 2rem;
   text-align: left;
 }
