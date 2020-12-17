@@ -1,3 +1,3 @@
 # gatsby_portfolio
 
-[video](https://youtu.be/asB-dUwpH4Y?t=6480)
+[video](https://youtu.be/asB-dUwpH4Y?t=8822)
