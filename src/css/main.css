@@ -842,7 +842,7 @@ Footer
 .footer h4 span {
   color: var(--clr-primary-5);
 }
-.footer-links {
+.footer__links {
   margin: 0 auto 1rem auto;
 }
 .footer .social-links__link {
@@ -856,22 +856,22 @@ Footer
 Pages
 ===============
 */
-.blog-template,
-.projects-page,
-.blog-page,
-.error-page,
-.about-page,
-.contact-page {
+.blog__template,
+.projects__page,
+.blog__page,
+.error__page,
+.about__page,
+.contact__page {
   background: var(--clr-grey-10);
   min-height: calc(100vh - 5rem - 9rem);
 }
-.error-page {
+.error__page {
   display: grid;
   place-items: center;
   background: var(--clr-primary-10);
   text-align: center;
 }
-.error-page h1 {
+.error__page h1 {
   text-transform: uppercase;
   color: var(--clr-primary-1);
   margin-bottom: 2rem;
@@ -881,7 +881,7 @@ Pages
 Blog Page
 ===============
 */
-.blog-page .blog {
+.blog__page .blog {
   background: var(--clr-white);
 }
 /*
@@ -889,54 +889,54 @@ Blog Page
 About Page
 ===============
 */
-.about-page {
+.about__page {
   padding: 7rem 0;
 }
-.about-img {
+.about__img {
   margin-bottom: 2rem;
   height: 25rem;
 }
-.about-text .section__title {
+.about__text .section__title {
   margin-bottom: 2rem;
   text-align: left;
 }
-.about-text .underline {
+.about__text .underline {
   margin-left: 0;
   margin-right: 0;
 }
-.about-text p {
+.about__text p {
   line-height: 2;
 }
-.stack-container {
+.stack__container {
   width: 30rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 0.5rem;
 }
-.stack-container span {
+.stack__container span {
   text-transform: uppercase;
   display: flex;
   align-items: center;
   letter-spacing: 1px;
   color: var(--clr-grey-4);
 }
-.stack-icon {
+.stack__icon {
   color: var(--clr-primary-5);
   margin-right: 0.25rem;
   font-size: 1rem;
 }
 @media screen and (min-width: 992px) {
-  .about-center {
+  .about--center {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
     column-gap: 4rem;
   }
-  .about-img {
+  .about__img {
     grid-column: 1 / span 5;
     margin-bottom: 0;
   }
-  .about-text {
+  .about__text {
     grid-column: 6 / -1;
   }
 }
@@ -945,12 +945,12 @@ About Page
 Contact Page
 ===============
 */
-.contact-page {
+.contact__page {
   display: grid;
   place-items: center;
   padding: 5rem 0;
 }
-.contact-form {
+.contact__form {
   background: var(--clr-white);
   border-radius: var(--radius);
   text-align: center;
@@ -959,17 +959,17 @@ Contact Page
   width: 90vw;
   max-width: 35rem;
 }
-.contact-form:hover {
+.contact__form:hover {
   box-shadow: var(--dark-shadow);
 }
-.contact-form h3 {
+.contact__form h3 {
   padding-top: 1.25rem;
   color: var(--clr-grey-5);
 }
 .form-group {
   padding: 1rem 1.5rem;
 }
-.form-control {
+.form-group__control {
   display: block;
   width: 100%;
   padding: 0.75rem 1rem;
@@ -980,7 +980,7 @@ Contact Page
   text-transform: uppercase;
   letter-spacing: var(--spacing);
 }
-.form-control::placeholder {
+.form-group__control::placeholder {
   font-family: var(--ff-primary);
   color: var(--clr-grey-1);
   text-transform: uppercase;
@@ -1037,6 +1037,5 @@ Blog Template
 }
 .blog__template img {
   width: 15rem;
-  height: 15rem;
   margin: 3rem 0;
 }
