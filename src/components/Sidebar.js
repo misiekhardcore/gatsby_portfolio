@@ -5,12 +5,12 @@ import { FaTimes } from "react-icons/fa"
 const Sidebar = ({ isOpen, handleToggle }) => {
   return (
     <aside className={`sidebar ${isOpen ? "sidebar--show" : ""}`}>
-      <button className="close-btn" onClick={()=>handleToggle(false)}>
+      <button className="close-btn" onClick={() => handleToggle(false)}>
         <FaTimes />
       </button>
       <div className="sidebar__container">
-        <Links styleClass="sidebar__links" />
-        <SocialLinks styleClass="sidebar__icons" />
+        <Links styleClass={isOpen ? "sidebar__links" : ""} />
+        <SocialLinks styleClass={isOpen ? "sidebar__icons" : ""} />
       </div>
     </aside>
   )
