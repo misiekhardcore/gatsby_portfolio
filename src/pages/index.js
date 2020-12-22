@@ -47,7 +47,6 @@ export const query = graphql`
     }
     allStrapiBlogs(sort: { fields: date, order: DESC }, limit: 3) {
       nodes {
-        content
         date(formatString: "DD MMMM YYYY")
         description
         slug
