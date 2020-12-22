@@ -20,6 +20,14 @@ const Blog = ({ id, title, description, date, category, slug, image }) => {
   )
 }
 
-Blog.propTypes = {}
+Blog.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+}
 
 export default Blog
