@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"
+import SEO from "../components/SEO"
 
 const Blog = ({
   data: {
@@ -10,6 +11,7 @@ const Blog = ({
 }) => {
   return (
     <Layout>
+      <SEO title="Blog" description="My blog page" />
       <section className="blog__page">
         <Blogs blogs={blogs} title="all blogs" />
       </section>
