@@ -986,7 +986,7 @@ Contact Page
   text-transform: uppercase;
   letter-spacing: var(--spacing);
 }
-.submit-btn {
+.btn--submit {
   display: block;
   width: 100%;
   padding: 1rem;
